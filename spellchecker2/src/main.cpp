@@ -1,16 +1,16 @@
 #include <iostream>
+#include <string>
 #include "Tokenizer.h"
 #include "Dictionary.h"
 #include "EditDistance.h"
 #include "utils.h"
-#include <string>
 
 using namespace std;
 
 int main()
 {
     string input;
-    getline(cin, input)
+    cin >> input;
     auto tokens = tokenize(input);
     Dictionary dict;
 

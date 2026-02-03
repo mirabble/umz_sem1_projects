@@ -3,12 +3,15 @@
 #include "Dictionary.h"
 #include "EditDistance.h"
 #include "utils.h"
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    auto tokens = tokenize("In this smal project you nead to hang or modify the prog");
+    string input;
+    getline(cin, input)
+    auto tokens = tokenize(input);
     Dictionary dict;
 
     cout << detokenize(tokens) << endl;

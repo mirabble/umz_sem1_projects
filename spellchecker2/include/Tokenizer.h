@@ -1,7 +1,8 @@
 #pragma once
-
 #include <string>
 #include <vector>
+
+using namespace std;
 
 enum class TokenType
 {
@@ -13,7 +14,7 @@ enum class TokenType
 struct Token
 {
     TokenType type;
-    std::string text;
+    string text;
 };
 
 // helper function declarations
@@ -23,5 +24,5 @@ bool isWhitespace(char c);
 
 // tokenizer interface
 Token createToken(std::string s);
-std::vector<Token> tokenize(const std::string &input);
-std::string detokenize(std::vector<Token> tokens);
+vector<Token> tokenize(const std::string &input);
+string detokenize(std::vector<Token> tokens);
